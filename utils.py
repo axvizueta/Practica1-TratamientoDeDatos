@@ -17,4 +17,5 @@ def get_last_price(ticker: str) -> float:
 
     price = r.json().get('chart').get('result')[0].get('meta').get('regularMarketPrice')
 
+
     return price
