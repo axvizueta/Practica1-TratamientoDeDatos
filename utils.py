@@ -16,6 +16,4 @@ def get_last_price(ticker: str) -> float:
         raise ValueError(f"ticker: '{ticker}' not found")
 
     price = r.json().get('chart').get('result')[0].get('meta').get('regularMarketPrice')
-
-
     return price
